@@ -111,3 +111,11 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Added 18.02.2018
+
+PATH=$PATH:~/dev/cidea
+
+# Added 24.04.2018
+# https://github.com/rupa/z
+. ~/z/z.sh
