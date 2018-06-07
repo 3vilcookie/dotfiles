@@ -27,6 +27,9 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
+" NerdTree
+Plugin 'scrooloose/nerdtree'
+
 "Plugin 'vim-airline/vim-airline'
 "Plugin 'vim-airline/vim-airline-themes'
 Plugin 'itchyny/lightline.vim' "{{{
@@ -121,3 +124,10 @@ set backspace=indent,eol,start
 set foldenable
 set foldmethod=marker
 syntax on
+
+" Add vertical line after 80 chars to fullfill the coding guideline
+highlight ColorColumn ctermbg=gray
+set cc=80
+
+" Nerd Tree (07.06.2018)
+map <C-n> :NERDTreeToggle<CR>
