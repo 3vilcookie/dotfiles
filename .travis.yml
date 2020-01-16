@@ -1,0 +1,7 @@
+language: bash
+addons:
+  apt:
+    - shellcheck
+    
+script:
+  - shellcheck .bashrc
