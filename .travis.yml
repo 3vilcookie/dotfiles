@@ -4,4 +4,4 @@ addons:
     - shellcheck
     
 script:
-  - shellcheck -e disable=2039,2148 .bashrc
+  - shellcheck -e 2039,2148 .bashrc
