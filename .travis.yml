@@ -4,4 +4,4 @@ addons:
     - shellcheck
     
 script:
-  - shellcheck .bashrc
+  - shellcheck .bashrc shell
