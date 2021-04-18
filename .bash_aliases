@@ -24,3 +24,8 @@ fi
 # Tmux
 alias tmux="TERM=xterm-256color ~/tmux_startup.sh"
 alias r="ranger"
+
+# Git
+alias gcp="git commit -p"
+alias grb="git rebase -i master"
+alias haltstopp="git commit --amend"
