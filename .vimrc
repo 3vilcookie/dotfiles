@@ -65,7 +65,6 @@ filetype plugin indent on    " required
 
 set background=dark
 set nu
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 " Key bindings
 map <tab> :tabnext<enter>
@@ -131,3 +130,6 @@ set cc=80
 
 " Nerd Tree (07.06.2018)
 map <C-n> :NERDTreeToggle<CR>
+
+" Johannes Python setting (tabs > spaces)
+autocmd Filetype python setlocal noexpandtab tabstop=4 shiftwidth=4 softtabstop=-1
