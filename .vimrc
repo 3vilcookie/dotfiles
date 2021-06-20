@@ -32,7 +32,6 @@ filetype plugin indent on    " required
 
 set background=dark
 set nu
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 " Key bindings
 map <tab> :tabnext<enter>
@@ -106,3 +105,7 @@ fun! SetupCommandAlias(from, to)
         \ .'? ("'.a:to.'") : ("'.a:from.'"))'
 endfun
 call SetupCommandAlias("G","GFiles")
+
+" Johannes Python setting (tabs > spaces)
+autocmd Filetype python setlocal noexpandtab tabstop=4 shiftwidth=4 softtabstop=-1
+
